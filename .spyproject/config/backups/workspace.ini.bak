@@ -1,0 +1,12 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+project_type = 'empty-project-type'
+recent_files = ['main.py', 'segmentation\\char_segmenter.py', 'ocr\\ocr_model.py', 'gui\\app.py', 'detector\\place_detector.py', 'xml_to_yolo.py', 'datasets\\data.yaml', 'train_yolo.py', 'convert_dataset.py', 'test_carplates_single.py', 'test_carplates_folder.py', 'export_model.py']
+
+[main]
+version = 0.2.0
+recent_files = []
+
