@@ -1,53 +1,155 @@
-#  Real-Time Vehicle Detection Desktop App
+## Real-Time Vehicle Detection Desktop Application
 
-A desktop-based vehicle detection system built using **YOLOv8**, **Python**, **OpenCV**, and **Tkinter**.  
-The application allows users to log in, select a video file, detect vehicles in real time, and store detection data in CSV format.
+A desktop-based computer vision application developed using YOLOv8, Python, OpenCV, and Tkinter that performs real-time vehicle detection from video files and logs detection results into a CSV file for further analysis.
 
----
+The application features a login system, a graphical user interface, video selection from the local system, real-time bounding box visualization, and automated data recording.
 
-##  Features
+## Project Overview
 
-- Login authentication (Tkinter GUI)
-- Background image–based UI
-- Vehicle detection using YOLOv8 (cars, buses, trucks, motorcycles)
-- Video file selection
-- Real-time bounding boxes
-- CSV logging for post-analysis
-- Modular and clean project structure
+This project demonstrates the complete pipeline of a real-world computer vision system, including:
 
----
+Desktop GUI development
 
-##  Tech Stack
+Deep learning–based object detection
 
-- Python 3.9+
-- YOLOv8 (Ultralytics)
-- OpenCV
-- Tkinter
-- Pillow
-- CSV
+Video processing
 
----
+Data logging
 
-##  Project Structure
+Modular software design
 
+Version control using Git and GitHub
+
+The system is designed to be scalable, allowing future integration of license plate detection and OCR.
+
+# Key Features
+
+# Login Authentication
+
+Username and password–based access using Tkinter GUI
+
+# Modern Desktop Interface
+
+Background image–based UI for both login and dashboard pages
+
+# Video File Selection
+
+Users can select any video file from their local system
+
+## Real-Time Vehicle Detection
+
+Detects:
+
+Cars
+
+Buses
+
+Trucks
+
+Motorcycles
+
+Powered by YOLOv8 pretrained model
+
+# Bounding Box Visualization
+
+Vehicles are highlighted with bounding boxes during playback
+
+# CSV Data Logging
+
+Detection details are automatically saved to a CSV file
+
+Useful for post-analysis and reporting
+
+# Modular Project Structure
+
+Clean separation of GUI, detection logic, and utilities
+
+# Tech Stack
+
+Programming Language: Python 3.9+
+
+Deep Learning Model: YOLOv8 (Ultralytics)
+
+Computer Vision: OpenCV
+
+GUI Framework: Tkinter
+
+Image Handling: Pillow (PIL)
+
+Data Storage: CSV
+
+Version Control: Git & GitHub
+
+## Project Structure
 ALPR_OD/
-├── main.py
+│
+├── main.py                  # Application entry point
+│
 ├── gui/
-│ ├── login.py
-│ └── dashboard.py
+│   ├── login.py             # Login screen GUI
+│   └── dashboard.py         # Main dashboard & detection UI
+│
 ├── utils/
-│ └── detector.py
+│   └── detector.py          # YOLOv8 vehicle detection logic
+│
 ├── assets/
-│ ├── bg_login.jpg
-│ └── bg_dashboard.jpgs
+│   ├── bg_login.jpg         # Login page background image
+│   └── bg_dashboard.jpg     # Dashboard background image
+│
 ├── output/
-├── requirements.txt
-└── README.md
+│   └── vehicles.csv         # Auto-generated detection results
+│
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
 
+# How to Run the Project
+# Clone the Repository
+git clone https://github.com/<your-username>/Vehicle-Detection-Desktop-App.git
+cd Vehicle-Detection-Desktop-App
 
+#Create & Activate Environment (Optional but Recommended)
+conda create -n alpr_env python=3.9
+conda activate alpr_env
 
-##  How to Run
-
-```bash
+# Install Dependencies
 pip install -r requirements.txt
-python main.py---
+
+# Run the Application
+python main.py
+
+# Login Credentials
+(Credentials can be modified inside gui/login.py)
+
+## Video Input
+
+The application allows users to select video files from any location on their system.
+
+Test videos are not included in the repository to keep it lightweight and reusable.
+
+Supported Formats:
+
+.mp4
+
+.avi
+
+.mov
+
+## Output Details
+
+Detection results are saved automatically in:
+
+output/vehicles.csv
+
+
+CSV columns include:
+
+Frame number
+
+Timestamp
+
+Detection confidence
+
+
+## Final Note
+
+This project reflects real-world software engineering practices, combining deep learning, desktop application development, and clean code architecture.
