@@ -67,17 +67,11 @@ Clean separation of GUI, detection logic, and utilities
 # Tech Stack
 
 Programming Language: Python 3.9+
-
 Deep Learning Model: YOLOv8 (Ultralytics)
-
 Computer Vision: OpenCV
-
 GUI Framework: Tkinter
-
 Image Handling: Pillow (PIL)
-
-Data Storage: CSV
-
+Data Storage CSV
 Version Control: Git & GitHub
 
 ## Project Structure
@@ -123,32 +117,23 @@ python main.py
 ## Video Input
 
 The application allows users to select video files from any location on their system.
-
 Test videos are not included in the repository to keep it lightweight and reusable.
 
 Supported Formats:
-
 .mp4
-
 .avi
-
 .mov
 
 ## Output Details
 
-Detection results are saved automatically in:
-
+Detection
 output/vehicles.csv
 
-
 CSV columns include:
-
 Frame number
-
 Timestamp
 
 Detection confidence
-
 
 ## Final Note
 
